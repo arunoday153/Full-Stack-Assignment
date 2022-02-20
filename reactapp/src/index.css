@@ -1,0 +1,259 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.main_div {
+  margin: 0 2rem;
+  padding: 2rem;
+  background-color: #f7f7f7;
+}
+
+/* ******************************************* HEADING VIEW ******************************************************** */
+.heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.heading_span {
+  position: relative;
+}
+
+.wait_img {
+  position: absolute;
+  top: -55%;
+  right: -10%;
+  width: 7rem;
+  height: 2rem;
+}
+
+.future_img {
+  position: absolute;
+  top: -80%;
+  right: 23%;
+  width: 7rem;
+  height: 4rem;
+}
+
+/* ******************************************* TEXT SECTION ******************************************************** */
+.section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+
+.section_input {
+  display: flex;
+  flex-direction: row;
+}
+
+.section_textbox {
+  height: 2rem;
+  flex: 1;
+  padding: 1rem;
+  border: 3px solid black;
+  margin-right: 2px;
+  border-radius: 2px;
+  transition: all .2s;
+}
+
+.section_textbox::placeholder {
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+  font-style: italic;
+}
+
+
+/* ******************************************* CARD VIEW******************************************************** */
+
+.section_card {
+  display: flex;
+  padding: 2rem 0;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.card_topSection {
+  width: 100%;
+  height: 125px;
+  background-color: yellow;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position: relative;
+}
+
+.card_UniversityImage {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card_UniversityLogo {
+  height: 60px;
+  width: 60px;
+  box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: -5%;
+  left: 5%;
+  background-color: white;
+}
+
+.card_LowerSection {
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card_title {
+  font-size: 1.2rem !important;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.university_name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.country_name {
+  font-size: 1rem;
+}
+
+.card_scholarship {
+  background-color: #000080;
+  /* border-radius: 5px; */
+  padding: 2px 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  margin: 1rem -1rem;
+}
+.card_scholarship p {
+  color: white;
+}
+
+.scholarship_name {
+  color: #1e5162;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.card_block,
+.card_button_block {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  padding: 0.7rem 0rem;
+}
+
+.card_block {
+  border-bottom: 1px solid #999;
+}
+
+.card_button_block {
+  margin-top: 0.7rem;
+}
+.card_block_text {
+  color: #777;
+}
+
+.card_block_NA {
+  font-weight: 600;
+}
+
+.learn_more_btn,
+.apply_now_btn {
+  padding: 0.3rem 1rem;
+  border-radius: 2px;
+  box-shadow: 0;
+  border: none;
+  box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+  transition: all 0.2s;
+  cursor: pointer;
+  color: white;
+}
+
+.learn_more_btn:active,
+.apply_now_btn:active {
+  transform: translateY(2px);
+}
+
+.learn_more_btn {
+  background-color: #777;
+}
+
+.apply_now_btn {
+  background-color: #1e5162;
+}
+
+.errorSpan{
+  text-align: center;
+  padding: 5rem;
+  margin-top: 2rem;
+  background-color: white;
+  box-shadow: 0 1rem 4rem rgb(0 0 0 / 10%);
+  width: 100%;
+}
+.errorSpan div{
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+input[type=text]{
+  font-size: 1rem;
+  font-weight: 500;
+  color:#1e5162;
+}
+
+@media only screen and (max-width : 800px){
+  html{
+    font-size: 65%;
+  }
+
+  .main_div{
+    margin:0;
+    padding-top: 5rem;
+  }
+
+  .section_input{
+    flex-direction: column;
+  }
+  .section_textbox{
+    margin-bottom: 3px;
+  }
+}
